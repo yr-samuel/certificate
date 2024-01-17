@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"
+    integrity="sha512-CeIsOAsgJnmevfCi2C7Zsyy6bQKi43utIjdA87Q0ZY84oDqnI0uwfM9+bKiIkI75lUeI00WG/+uJzOmuHlesMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Certificate</title>
+</head>
+
+<body>
+    <div style="position: absolute; z-index: 2;">
+        <input type="file" accept="image/*">
+        <button onclick="addText()">add text</button>
+        <button onclick="exportJSON()">copy fabric canvas object</button>
+        <button onclick="download()">download</button>
+    </div>
+    <canvas id="c" width="500" height="620">
+
+    </canvas>
+</body>
+
+</html>
